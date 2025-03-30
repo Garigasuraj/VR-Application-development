@@ -4,11 +4,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Rigidbody))]
 public class WeightedGrabPhysics : XRGrabInteractable
 {
-    public float weightMultiplier = 40f; // Adjusts difficulty of lifting heavy objects
+    public float weightMultiplier = 30f; // Adjusts difficulty of lifting heavy objects
+
+    public Transform leftAttachTransform;
+    public Transform rightAttachTransform;
 
     private Rigidbody rb;
     private Transform handTransform;
     private bool isGrabbed = false;
+    private Vector3 grabOffset;
 
     protected override void Awake()
     {
@@ -31,6 +35,16 @@ public class WeightedGrabPhysics : XRGrabInteractable
     {
         isGrabbed = true;
         handTransform = args.interactorObject.transform;
+
+        // Detect closer handle at grab time
+        float distToLeft = Vector3.Distance(handTransform.position, leftAttachTransform.position);
+        float distToRight = Vector3.Distance(handTransform.position, rightAttachTransform.position);
+
+        attachTransform = (distToLeft < distToRight) ? leftAttachTransform : rightAttachTransform;
+        base.attachTransform = attachTransform;
+
+        // Calculate grab offset
+        grabOffset = transform.position - handTransform.position;
     }
 
     private void OnRelease(SelectExitEventArgs args)
@@ -43,14 +57,12 @@ public class WeightedGrabPhysics : XRGrabInteractable
     {
         if (isGrabbed && handTransform != null)
         {
-            // Calculate direction & distance
-            Vector3 direction = handTransform.position - transform.position;
+            Vector3 targetPosition = handTransform.position + grabOffset;
+            Vector3 direction = targetPosition - transform.position;
+            float liftSpeed = weightMultiplier / rb.mass;
 
-            // Calculate lifting force based on object's mass
-            float liftSpeed = weightMultiplier / rb.mass; // Heavier mass = slower lifting
-
-            // Apply smooth lifting movement
             rb.velocity = direction * liftSpeed;
         }
     }
 }
+

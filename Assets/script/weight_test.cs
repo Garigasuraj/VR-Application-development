@@ -6,6 +6,8 @@ public class WeightedGrabPhysics : XRGrabInteractable
 {
     public float weightMultiplier = 30f; // Adjusts difficulty of lifting heavy objects
 
+    [SerializeField] private Weight updated_weight;
+
     public Transform leftAttachTransform;
     public Transform rightAttachTransform;
 
@@ -59,10 +61,13 @@ public class WeightedGrabPhysics : XRGrabInteractable
         {
             Vector3 targetPosition = handTransform.position + grabOffset;
             Vector3 direction = targetPosition - transform.position;
-            float liftSpeed = weightMultiplier / rb.mass;
+            float liftSpeed = (weightMultiplier + updated_weight.boxWeight) / rb.mass;
+
+            Debug.Log("liftspeed: " + liftSpeed);
 
             rb.velocity = direction * liftSpeed;
         }
     }
+
 }
 

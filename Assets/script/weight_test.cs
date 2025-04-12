@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Rigidbody))]
 public class WeightedGrabPhysics : XRGrabInteractable
 {
-    public float weightMultiplier = 30f; // Adjusts difficulty of lifting heavy objects
+    public float weightMultiplier = 10f; // Adjusts difficulty of lifting heavy objects
 
     [SerializeField] private Weight updated_weight;
 
@@ -46,7 +46,7 @@ public class WeightedGrabPhysics : XRGrabInteractable
         base.attachTransform = attachTransform;
 
         // Calculate grab offset
-        grabOffset = transform.position - handTransform.position;
+        grabOffset = transform.position - attachTransform.position;
     }
 
     private void OnRelease(SelectExitEventArgs args)

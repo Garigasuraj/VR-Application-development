@@ -46,7 +46,7 @@ public class WeightedGrabPhysics : XRGrabInteractable
         base.attachTransform = attachTransform;
 
         // Calculate grab offset
-        grabOffset = transform.position - attachTransform.position;
+        grabOffset = transform.position - handTransform.position;
     }
 
     private void OnRelease(SelectExitEventArgs args)
@@ -61,7 +61,7 @@ public class WeightedGrabPhysics : XRGrabInteractable
         {
             Vector3 targetPosition = handTransform.position + grabOffset;
             Vector3 direction = targetPosition - transform.position;
-            float liftSpeed = (weightMultiplier + updated_weight.boxWeight) / rb.mass;
+            float liftSpeed = Mathf.Clamp((weightMultiplier + updated_weight.boxWeight) / rb.mass, 0.1f, 10f);
 
             Debug.Log("liftspeed: " + liftSpeed);
 

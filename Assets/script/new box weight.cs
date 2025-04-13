@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weight : MonoBehaviour
+public class newboxweight : MonoBehaviour
 {
-    public float boxWeight = 0f;
+    public float bigboxWeight = 0f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,8 +13,8 @@ public class Weight : MonoBehaviour
         if (obj != null)
         {
             Debug.Log("The mass: " + obj.mass);
-            boxWeight += obj.mass;
-            Debug.Log("Object added. New box weight: " + boxWeight);
+            bigboxWeight += obj.mass;
+            Debug.Log("Object added. New box weight: " + bigboxWeight);
         }
     }
 
@@ -24,8 +24,8 @@ public class Weight : MonoBehaviour
 
         if (obj != null)
         {
-            boxWeight -= obj.mass;
-            Debug.Log("Object removed. New box weight: " + boxWeight);
+            bigboxWeight -= obj.mass;
+            Debug.Log("Object removed. New box weight: " + bigboxWeight);
         }
     }
 }

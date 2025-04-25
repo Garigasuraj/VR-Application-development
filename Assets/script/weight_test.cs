@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Rigidbody))]
 public class WeightedGrabPhysics : XRGrabInteractable
 {
-    public float weightMultiplier = 10f; // Adjusts difficulty of lifting heavy objects
+    public float weightMultiplier = 0f; // Adjusts difficulty of lifting heavy objects
 
     [SerializeField] private Weight updated_weight;
 

@@ -84,6 +84,40 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-7869966670174943577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-7292332369244359317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
 --- !u!114 &-6866174492762341538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +136,40 @@ MonoBehaviour:
   m_Loaders:
   - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
 --- !u!114 &-5897199217309168101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-5823343243913248856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-5525944002395527264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,6 +238,40 @@ MonoBehaviour:
   m_Loaders:
   - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
 --- !u!114 &-4387334137227181054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-3314940245863711759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: Unity.XR.Management:UnityEngine.XR.Management:XRManagerSettings
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders:
+  - {fileID: 11400000, guid: acb61fcbb3f94f940b44a90e18e055e1, type: 2}
+--- !u!114 &-2367782650135511968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -2009227071924262399}
+  m_LoaderManagerInstance: {fileID: -7869966670174943577}
   m_InitManagerOnStart: 1
 --- !u!114 &5800530779704239527
 MonoBehaviour:
